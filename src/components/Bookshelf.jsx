@@ -19,7 +19,6 @@ function Bookshelf() {
         });
     }
 
-
     return (
     <div>
     <img src="./images/empty-bookshelf.png" class="bookshelf" alt="bookshelf" />
