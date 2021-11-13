@@ -116,10 +116,18 @@ form button {
 }
 
 .bookshelf {
+<<<<<<< HEAD
     margin-top: 170px;
+=======
+    margin-top: 160px;
+>>>>>>> 4368904d11ed89169c371434c9bebf65419053e4
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
+<<<<<<< HEAD
     margin-left: 0;
     }
+=======
+}
+>>>>>>> 4368904d11ed89169c371434c9bebf65419053e4

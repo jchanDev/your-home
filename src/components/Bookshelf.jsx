@@ -21,7 +21,7 @@ function Bookshelf() {
 
 
     return (
-        <div>
+    <div>
     <img src="./images/empty-bookshelf.png" class="bookshelf" alt="bookshelf" />
 
     <CreateBook onAdd={addBook} />
@@ -38,7 +38,6 @@ function Bookshelf() {
         })}
     </div>
     )
-    
 }
 
 export default Bookshelf;
