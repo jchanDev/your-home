@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import CreateBook from "./CreateBook";
 import Book from "./Book";
@@ -9,7 +8,7 @@ function Bookshelf() {
     function addBook(newBook) {
         setbooks(prevBooks => {
             return [...prevBooks, newBook];
-        })
+        });
     }
 
     function deleteBook(id) {
@@ -20,25 +19,25 @@ function Bookshelf() {
         });
     }
 
+
     return (
     <div>
     <img src="./images/empty-bookshelf.png" class="bookshelf" alt="bookshelf" />
-    
+
     <CreateBook onAdd={addBook} />
-            {books.map((bookItem, index) => {
-                return (
-                    <Book   
-                        key={index}
-                        id={index}
-                        title={bookItem.title}
-                        content={bookItem.content}
-                        onDelete={deleteBook}
-                    />
-                );
-            })}
-
-    </div> );
-
+        {books.map((bookItem, index) => {
+            return (
+                <Book   
+                    key={index}
+                    id={index}
+                    title={bookItem.title}
+                    content={bookItem.content}
+                    onDelete={deleteBook}
+                />  
+            );
+        })}
+    </div>
+    )
 }
 
 export default Bookshelf;
