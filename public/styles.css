@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Serif";
 }
 
 body {
@@ -15,16 +15,17 @@ body {
 }
 
 header {
-    background-color: #290da7;
+    background-color: #630000;
     margin: auto -16px;
     padding: 16px 32px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
-    color: #fff;
-    font-family: "McLaren", cursive;
+    color: #EEEBDD;
+    font-family: "Times New Roman", serif;
     font-weight: 200;
+    text-align: center;
 }
 
 footer {

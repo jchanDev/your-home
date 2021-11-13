@@ -26,17 +26,17 @@ function App() {
         <div>
             <Header />
             <CreateBook onAdd={addBook} />
-            {books.map((bookItem, index) => {
-                return (
-                    <Book   
-                        key={index}
-                        id={index}
-                        title={bookItem.title}
-                        content={bookItem.content}
-                        onDelete={deleteBook}
-                    />
-                );
-            })}
+        {books.map((bookItem, index) => {
+            return (
+                <Book   
+                    key={index}
+                    id={index}
+                    title={bookItem.title}
+                    content={bookItem.content}
+                    onDelete={deleteBook}
+                />  
+            );
+        })}
             <Bookshelf />
             <Footer />
         </div>
